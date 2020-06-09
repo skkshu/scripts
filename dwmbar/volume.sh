@@ -3,7 +3,7 @@
 # Prints out the volume percentage
 
 VOLUME_ON_ICON=' '
-VOLUME_MUTED_ICON=' '
+VOLUME_MUTED_ICON='× '
 
 get_volume(){
         active_sink=$(pacmd list-sinks | awk '/* index:/{print $3}')

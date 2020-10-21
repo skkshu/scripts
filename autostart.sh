@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# picom -b
+picom -b
 /bin/bash ~/Suckless/scripts/run-dwmbar.sh &
 /bin/bash ~/Suckless/scripts/dwm-additional-functionality/wallpaper/wp-autochange.sh &
-xfce4-power-manager &
-xfce4-volumed-pulse &
-nm-applet &
+# xfce4-power-manager &
+# xfce4-volumed-pulse &
+# nm-applet &
 qv2ray &
 ~/Suckless/scripts/autostart_wait.sh &
 

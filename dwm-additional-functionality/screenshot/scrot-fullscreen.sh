@@ -1,3 +1,10 @@
 #!/bin/bash
 
-scrot -e 'mv $f /home/skkshu/Pictures/screenshots/'
+ss_folder="~/Pictures/screenshots"
+
+if [ ! -d "$ss_folder" ]
+then
+	mkdir "$ss_folder"
+fi
+
+scrot -e 'mv $f ~/Pictures/screenshots'

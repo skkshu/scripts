@@ -3,7 +3,7 @@
 # Prints number of todos
 # Requires t todo manager (https://github.com/sjl/t)
 
-TASKS_DIR="/home/$USER/.tasks"
+TASKS_DIR="/home/$USER/Downloads/t"
 TASKS_NAME="todo.txt"
 PREFIX_TODO=': '
 

@@ -1,4 +1,11 @@
 #!/bin/bash
+if [[ -z "$(amixer get Master | grep '\[on\]')" ]]
+then
+	amixer set Master on
+	amixer set Speaker on
+else
+	amixer set Master off
+fi
 
-/usr/bin/amixer set Master toggle
 bash ~/Suckless/scripts/dwmbar.sh
+
